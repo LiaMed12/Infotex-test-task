@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div class="container">
+    <div id="container_for_table">
+        <table border="1" id="table">
+            <tr>
+                <th onclick="sortTable(0)">Имя</th>
+                <th onclick="sortTable(1)">Фамилия</th>
+                <th onclick="sortTable(2)">Описание</th>
+                <th onclick="sortTable(3)">Цвет глаз</th>
+            </tr>
+
+        </table>
+
+    </div>
+</div>
+
+<div id="window">
+    Window<br>
+    <label>
+    <textarea id='name_text_window'>
+    NAME
+    </textarea>
+        <textarea id='lastname_text_window'>
+    LASTNAME
+    </textarea>
+        <textarea id='about_text_window'>
+    ABOUT
+    </textarea>
+        <textarea id='eye_text_window'>
+    EYE
+    </textarea>
+    </label>
+    <br>
+    <button onclick="okEdit()">Ок</button>
+    <button onclick="closeWindow()">Cancel</button>
+</div>
+<div class = "page_numbers" id = "pagination"> </div>
+
+<script src="test_file.js"></script>
+<script src="Testing_JS.js"></script>
+</body>
+</html>
